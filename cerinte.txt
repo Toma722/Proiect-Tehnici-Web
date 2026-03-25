@@ -1,0 +1,27 @@
+ETAPA 1:
+1 - linii: 1-2
+2 - linii: 4-12
+3 - linii: 128, 130, 50, 210, 211, 75
+4 - linii: 13-18
+5 - linii: 23, 47, 304
+6 - linii: 48-71, 86-124
+7 - linii: 24-27
+8 - linii: 28-44
+9 - linii: 51-54
+10 - linii: 258-265
+11 - linii: 56-61
+12 - linii: 50-51
+13 - linii: 76-77, 306-308
+14 - linii: 267-280
+15 - linii: 129-192
+16 - linii: 196-256
+17 - linii: 193, 255
+18 - linii: 310-324
+19 - linii: 305
+
+BONUS:
+1 - linii: 90-113
+2 - linii: 294
+3 - linii: 62-67
+4 - linii: 319
+5 - linii: 282-289

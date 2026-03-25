@@ -386,12 +386,6 @@ figure {
         display: flex;
         flex-direction: column;
     }
-    
-    * {
-        animation: none !important;
-        transition: none !important;
-    }
-    
     img, video, iframe, embed {
         min-width: 100%;
     }
@@ -444,4 +438,77 @@ math mfrac {
 
 math mfenced {
     color: var(--culoare-inchisa);
+}
+
+@media screen {
+    #banner-print, #watermark {
+        display: none;
+    }
+}
+
+@media print {
+    @page :left {
+        margin-left: 2.5cm;
+        margin-right: 0.5cm;
+    }
+    
+    @page :right {
+        margin-left: 0.5cm;
+        margin-right: 2.5cm;
+    }
+
+    img, video, iframe, embed, picture, figure, figcaption, #link-top, nav, #hamburger, header nav {
+        display: none !important;
+    }
+
+    #grid-pagina, #grid-pagina > * {
+        display: block !important;
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    a {
+        text-decoration: none !important;
+        color: black !important;
+    }
+
+    #banner-print {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 10%;
+        width: 80%;
+        border: 2px dotted black;
+        text-align: center;
+        padding: 5px;
+    }
+
+    #watermark {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width: 100px;
+        height: 2cm;
+        border: 3px double black;
+        opacity: 0.65;
+        font-size: 14px;
+        z-index: 9999;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        text-decoration: underline;
+        text-align: center;
+        margin-top: 40vh;
+        page-break-after: always;
+        break-after: page;
+    }
+
+    footer {
+        page-break-before: always;
+        break-before: page;
+    }
 }

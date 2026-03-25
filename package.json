@@ -1,0 +1,33 @@
+{
+  "name": "tehniciweb",
+  "version": "1.0.0",
+  "description": "Site ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "sass": "sass --watch resurse/scss:resurse/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Toma722/Proiect-Tehnici-Web.git"
+  },
+  "keywords": [
+    "Magazin",
+    "Piese",
+    "Auto"
+  ],
+  "author": "Toma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Toma722/Proiect-Tehnici-Web/issues"
+  },
+  "homepage": "https://github.com/Toma722/Proiect-Tehnici-Web#readme",
+  "dependencies": {
+    "ejs": "^5.0.1",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "sass": "^1.98.0"
+  }
+}
